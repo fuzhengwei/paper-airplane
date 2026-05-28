@@ -90,8 +90,8 @@ class UIManager {
             .setScrollFactor(0);
         this.hpForeground.fillStyle(COLORS.SUCCESS);
         this.hpForeground.fillRoundedRect(bx + 2, by + 2, bw - 4, bh - 4, 10);
-        this.hpForeground.setOrigin(0, 0);
-        this.hpForeground.x = 0;  // 保持位置不变
+        // Graphics 对象没有 setOrigin，位置由 fillRoundedRect 的坐标参数控制
+        this.hpForeground.x = 0;
         this.hpForeground.y = 0;
 
         this.hpConfig = { x: bx, y: by, width: bw, height: bh };
