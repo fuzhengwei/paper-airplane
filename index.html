@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+<title>✈️ 编程纸飞机作战</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{overflow:hidden;width:100%;height:100%;background:#070720;touch-action:none;-webkit-tap-highlight-color:transparent;user-select:none}
+canvas{display:block}
+</style>
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/phaser@3.80.1/dist/phaser.min.js"></script>
+
+<!-- 常量配置 -->
+<script src="js/constants.js"></script>
+
+<!-- 数据模块 -->
+<script src="js/config.js"></script>
+<script src="js/data-store.js"></script>
+<script src="js/player-info.js"></script>
+<script src="js/achievements.js"></script>
+
+<!-- 管理器模块 -->
+<script src="js/managers/SoundManager.js"></script>
+<script src="js/managers/InputManager.js"></script>
+<script src="js/managers/UIManager.js"></script>
+<script src="js/managers/VFXManager.js"></script>
+
+<!-- 系统模块 -->
+<script src="js/systems/SkillSystem.js"></script>
+<script src="js/systems/QuizSystem.js"></script>
+
+<!-- 场景模块 -->
+<script src="js/scenes/BootScene.js"></script>
+<script src="js/scenes/LoginScene.js"></script>
+<script src="js/scenes/MenuScene.js"></script>
+<script src="js/scenes/RankScene.js"></script>
+<script src="js/scenes/SettingsScene.js"></script>
+<script src="js/scenes/StatsScene.js"></script>
+<script src="js/scenes/AchScene.js"></script>
+<script src="js/scenes/GameScene.js"></script>
+<script src="js/scenes/OverScene.js"></script>
+
+<!-- 游戏启动 -->
+<script src="js/game.js"></script>
+</body>
+</html>
